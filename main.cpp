@@ -6,6 +6,10 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/imgproc/imgproc_c.h>
 
+#include <baseapi.h>
+#include <allheaders.h>
+
+
 using namespace std;
 using namespace cv;
 
@@ -18,7 +22,7 @@ void bubbleSort(vector<Point>& largest_square);
 int main()
 {
     //원본 이미지 불러오기
-    Mat pic = imread("/Users/economy/Desktop/pic.jpeg");
+    Mat pic = imread("/Users/economy/Desktop/pic3.jpeg");
     if (pic.empty())
     {
         cout << "!!! Failed to open image" << endl;
